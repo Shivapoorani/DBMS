@@ -1,0 +1,53 @@
+QUESTION 1:
+create database dataa;
+use dataa;
+create table student(
+         Regno int(3),
+         Name varchar(30),
+         Gender varchar(1), 
+         DOB int not null, 
+         MobileNo int(10), 
+         City varchar(15) not null
+         );
+         describe student;
+         
+         QUESTION 2:
+         
+  create database dataa;
+  use dataa;
+         create table faculty(
+         FacNo varchar(4), 
+         FacName varchar(15), 
+         Gender varchar(1), 
+         DOB int not null, 
+         DOJ int(10) not null, 
+         MobileNo int(10) not null
+         );
+         
+         QUESTION 3:
+        
+   create database dataa;
+   use dataa;
+             create table Department(
+             Deptno varchar(4) not null, 
+             DeptName varchar(15) not null, 
+             DeptHead varchar(4) not null
+             );
+             
+             QUESTION 4:
+             
+    create database dataa;
+    use dataa;
+               create table Courses(
+               Courseno varchar(3) not null, 
+               CourseDesc varchar(14) not null, 
+               CourseType varchar(1) not null, 
+               SemNo varchar(1) not null, 
+               Hallno varchar(4) not null, 
+               Factno varchar(4) not null
+               );
+               
+               OUESTION 5:
+              
+              alter table Faculty
+              -> add column DeptNo varchar(4) not null;
