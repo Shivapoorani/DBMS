@@ -1,16 +1,3 @@
-Enter password: ******
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.5.62 MySQL Community Server (GPL)
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
 mysql> use dataa;
 Database changed
 mysql> select * from student;
@@ -200,22 +187,6 @@ mysql> select * from courses where HallNo="no";
 | E        | System     | Z          | X     | No     | WE     |
 +----------+------------+------------+-------+--------+--------+
 2 rows in set (0.00 sec)
-
-mysql>  Enter password: ******
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.5.62 MySQL Community Server (GPL)
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> use dataa;
-Database changed
 mysql> select * from student;
 +-------+------+--------+-----+----------+---------+
 | RegNo | Name | Gender | DOB | MobileNo | City    |
@@ -324,16 +295,6 @@ mysql> describe courses;
 | Factno     | varchar(4)  | NO   |     | NULL    |       |
 +------------+-------------+------+-----+---------+-------+
 6 rows in set (0.03 sec)
-
-mysql> insert into course table("A", "DBMS", "AS", "SD", "ED", "DC");
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table("A", "DBMS", "AS", "SD", "ED", "DC")' at line 1
-mysql> insert into course table("A", "DBMS", "S", "D", "ED", "DC"););
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table("A", "DBMS", "S", "D", "ED", "DC")' at line 1
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
-mysql> insert into courses table("A", "DBMS", "S", "D", "ED", "DC");
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table("A", "DBMS", "S", "D", "ED", "DC")' at line 1
-mysql> insert into course values("A", "DBMS", "S", "D", "ED", "DC");
-ERROR 1146 (42S02): Table 'dataa.course' doesn't exist
 mysql> describe courses;
 +------------+-------------+------+-----+---------+-------+
 | Field      | Type        | Null | Key | Default | Extra |
@@ -389,18 +350,6 @@ mysql> select * from courses where semno='D' and courseno='A';
 | A        | Dbms       | S          | D     | AS     | DF     |
 +----------+------------+------------+-------+--------+--------+
 1 row in set (0.03 sec)
-
-mysql> alter table courses
-    -> alter column HallNo varchar(4) null;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varchar(4) null' at line 2
-mysql> update [courses]
-    -> set[HallNo]=0
-    -> where [HallNo] is null;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[courses]
-set[HallNo]=0
-where [HallNo] is null' at line 1
-mysql> insert into courses values("C", "Data", "E", "R", "No", "SE");
-ERROR 1062 (23000): Duplicate entry 'C' for key 'PRIMARY'
 mysql> insert into courses values("D", "Structure", "O", "M", "No", "ZE");
 Query OK, 1 row affected (0.14 sec)
 
@@ -427,22 +376,6 @@ mysql> select * from courses where HallNo="no";
 | E        | System     | Z          | X     | No     | WE     |
 +----------+------------+------------+-------+--------+--------+
 2 rows in set (0.00 sec)
-
-mysql>Enter password: ******
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.5.62 MySQL Community Server (GPL)
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> use dataa;
-Database changed
 mysql> select * from student;
 +-------+------+--------+-----+----------+---------+
 | RegNo | Name | Gender | DOB | MobileNo | City    |
